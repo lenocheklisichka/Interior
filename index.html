@@ -1,75 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sliderCarousel.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interior</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="js/main.js"></script>
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__nav">
-        <a href="#" class="header__logo"></a>
-        <ul class="header__list">
-          <li class="header__item"><a class="header__link" href="#">Home</a></li>
-          <li class="header__item"><a class="header__link" href="#">Products</a></li>
-          <li class="header__item"><a class="header__link" href="#">History</a></li>
-          <li class="header__item"><a class="header__link" href="#">Showroom</a></li>
-          <li class="header__item"><a class="header__link" href="#">Contact</a></li>
-        </ul>
-        <div class="header__burger-menu"></div>
-        <div class="header__modal">
-          <button class="header__btn-close" type="button"><span>&times;</span></button>
-          <ul class="header__nav-modal">
-            <li class="header__item"><a class="header__link" href="#">Home</a></li>
-            <li class="header__item"><a class="header__link" href="#">Products</a></li>
-            <li class="header__item"><a class="header__link" href="#">History</a></li>
-            <li class="header__item"><a class="header__link" href="#">Showroom</a></li>
-            <li class="header__item"><a class="header__link" href="#">Contact</a></li>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__nav">
+          <a href="#" class="header__logo"></a>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Products</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">History</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Showroom</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Contact</a>
+            </li>
           </ul>
-        </div>
-      </div>
-
-      <div class="header__content">
-        <span class="header__span">Trending</span>
-        <h1 class="header__title">Fishnet chair</h1>
-        <p class="header__text">Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum
-          dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident.
-        </p>
-        <input type="button" class="button" value="Order Us">
-      </div>
-    </div>
-  </header>
-
-  <section class="featured">
-    <div class="container">
-      <div class="featured__box">
-        <span class="featured__title">Featured New</span>
-        <span class="featured__explore">Explore all</span>
-      </div>
-      <div class="featured__content">
-        <div class="featured__img-1 featured__item">
-          <div class="featured__block">
-            <button class="featured__button"> > </button>
-            <span class="featured__head">Fishnet Chair</span>
-            <p class="featured__text">Seat and back with upholstery made of cold cure foam</p>
+          <div class="header__burger-menu"></div>
+          <div class="header__modal">
+            <button class="header__btn-close" type="button">
+              <span>&times;</span>
+            </button>
+            <ul class="header__nav-modal">
+              <li class="header__item">
+                <a class="header__link" href="#">Home</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Products</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">History</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Showroom</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <img src="img/featured/img_2.png" alt="" class="featured__item">
-        <img src="img/featured/img_3.png" alt="" class="featured__item">
-        <img src="img/featured/img_4.png" alt="" class="featured__item">
+
+        <div class="header__content">
+          <span class="header__span">Trending</span>
+          <h1 class="header__title">Fishnet chair</h1>
+          <p class="header__text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident.
+          </p>
+          <button class="button">
+            Order Us
+            <img src="img/exclusive/arrow_img.png" alt="" class="arrow" />
+          </button>
+        </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-</body>
+    <section class="featured">
+      <div class="container">
+        <div class="featured__box">
+          <span class="featured__title">Featured New</span>
+          <span class="explore"
+            >Explore all<img src="img/featured/arrow.png" alt="" class="arrow"
+          /></span>
+        </div>
+        <div class="featured__content">
+          <!-- <div class="featured__box-block"> -->
+          <img
+            src="img/featured/img_1.png"
+            alt=""
+            class="featured__item featured__img"
+          />
+          <div class="featured__block">
+            <button class="featured__button">
+              <img src="img/featured/arrow_1.png" alt="" />
+            </button>
+            <span class="featured__head">Fishnet Chair</span>
+            <p class="featured__text">
+              Seat and back with upholstery made of cold cure foam
+            </p>
+          </div>
+          <!-- </div> -->
+          <img src="img/featured/img_2.png" alt="" class="featured__item" />
+          <img src="img/featured/img_3.png" alt="" class="featured__item" />
+          <img src="img/featured/img_4.png" alt="" class="featured__item" />
+        </div>
+      </div>
+    </section>
 
+    <section class="exclusive">
+      <div class="exclusive__box-content">
+        <div class="exclusive__content-img-1">
+          <div class="exclusive__block">
+            <span class="exclusive__span">Exclusive</span>
+            <p class="exclusive__title">Fishnet Chair</p>
+            <p class="exclusive__text">
+              Seat and back with upholstery made of cold cure foam. Steel frame,
+              available in matt
+            </p>
+            <button class="button">
+              Order Us
+              <img src="img/exclusive/arrow_img.png" alt="" class="arrow" />
+            </button>
+          </div>
+        </div>
+        <div class="exclusive__content-img-2">
+          <div class="exclusive__block">
+            <span class="exclusive__span">Exclusive</span>
+            <p class="exclusive__title">Fishnet Chair</p>
+            <p class="exclusive__text">
+              Seat and back with upholstery made of cold cure foam. Steel frame,
+              available in matt
+            </p>
+            <button class="button">
+              Order Us
+              <img src="img/exclusive/arrow_img.png" alt="" class="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="trending">
+      <div class="container">
+        <div class="trending__box">
+          <span class="trending__title">Trending Products</span>
+          <span class="explore"
+            >Explore all<img src="img/featured/arrow.png" alt="" class="arrow"
+          /></span>
+        </div>
+        <div class="trending__content">
+          <img
+            src="img/trending/img_1.png"
+            alt=""
+            class="trending__content-img"
+          />
+          <img
+            src="img/trending/img_2.png"
+            alt=""
+            class="trending__content-img"
+          />
+          <img
+            src="img/trending/img_3.png"
+            alt=""
+            class="trending__content-img"
+          />
+          <img
+            src="img/trending/img_4.png"
+            alt=""
+            class="trending__content-img"
+          />
+          <img
+            src="img/trending/img_5.png"
+            alt=""
+            class="trending__content-img"
+          />
+          <img
+            src="img/trending/img_6.png"
+            alt=""
+            class="trending__content-img"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

@@ -1,27 +1,26 @@
 .featured
-  height: 700px
+  height: 650px
   &__box
     display: flex
     justify-content: space-between
-    padding-top: 118px
   &__title
     font-size: 35px
-  &__explore
-    font-size: 17px
-    text-transform: uppercase
+    padding-top: 100px
+    border-bottom: 1px solid #000
+  &__arrow
+    padding-left: 15px
   &__content
     display: flex
     padding-top: 52px
-  &__img-1
-    background: url(../img/featured/img_1.png) no-repeat
-    width: 270px
-    height: 270px
+  &__img
+    position: relative
   &__block
+    position: absolute
     display: block
     text-align: center
-    margin: auto
-    width: 180px
-    padding-top: 55px
+    width: 230px
+    padding-top: 72px
+    padding-left: 65px
   &__button
     width: 50px
     height: 50px
@@ -33,6 +32,8 @@
     cursor: pointer
     box-shadow: 1px 2px 16px 0px rgba(34, 60, 80, 0.2)
     margin-bottom: 17px
+  &__button:hover
+    outline: none
   &__head
     font-size: 20px
     padding-top: 17px
@@ -43,5 +44,4 @@
   &__item
     margin-right: 25px
   &__item:last-child
-    padding-right: 0
-
+    margin-right: 0
