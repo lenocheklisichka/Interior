@@ -8,10 +8,11 @@
     height: 22px
   &__list
     display: flex
+    justify-content: space-between
+    width: 550px
   &__item
     font-size: 15px
     text-transform: uppercase
-    padding-right: 50px
   &__item:last-child
     padding-right: 0
   &__link
@@ -19,7 +20,7 @@
   &__link:hover
     color: #000000
     font-weight: bold
-    border-bottom: 2px solid #000000
+    border-bottom: 1px solid #000000
   &__nav
     display: flex
     justify-content: space-between
@@ -37,8 +38,11 @@
     width: 450px
     line-height: 1.5
     padding-bottom: 30px
-  &__content
+    color: #8c8e91
+  &__content-box
     padding-top: 285px
+  &__content
+    display: flex
   &__burger-menu
     position: relative
     display: block
@@ -88,6 +92,8 @@
     padding: 30px 15px 40px 15px
     box-shadow: 0 5px 6px #f4f4f4
     border-radius: 10px
+  &__content-first
+    display: none
 
 
 //MEDIA
